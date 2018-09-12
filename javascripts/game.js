@@ -3069,8 +3069,8 @@ function switchOption(notation,id) {
 			if (value<1||value>6) return
 			player.options.psi.args=value
 		}
-		if (id=="psiSide") {
-			player.options.psi.side=value
+		if (id.startsWith("psiSide")) {
+			player.options.psi.side=id[7]
 		}
 		if (id=="maxLetters") {
 			if (value<1||value>4) return
