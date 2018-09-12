@@ -3062,12 +3062,23 @@ function switchOption(notation,id) {
 		if (isNaN(value)) return
 		if (value%1!=0) return
 		if (id=="maxLength") {
-			if (value<2||value>20) return
+			if (value<2||value>30) return
 			player.options.psi.chars=value
 		}
 		if (id=="maxArguments") {
-			if (value<1||value>4) return
+			if (value<1||value>6) return
 			player.options.psi.args=value
+		}
+		if (id=="psiSide") {
+			player.options.psi.side=value
+		}
+		if (id=="maxLetters") {
+			if (value<1||value>4) return
+			player.options.psi.maxletters=value
+		}
+		if (id.startsWith("psiLetter")) {
+			var letters={"None":[],"E":[1],"F":[2],"G":[3],"H":[4]}
+			player.options.psi.letter=letters[value.slice(9)]
 		}
 	}
 	onNotationChange()
