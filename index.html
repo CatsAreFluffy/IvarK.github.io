@@ -684,7 +684,7 @@
                                     <a href="howto.html" target="_newtab">How to play  </a> |
                                     <a href="about.html" onclick="giveAchievement('A sound financial decision')" target="_newtab">About   </a> |
                                     <a href="changelog/" target="_newtab">Changelog   </a>
-								</div>
+                                </div>
                             </td>
                         </tr>
                     </table>
@@ -1371,8 +1371,8 @@
             <div class='optionstab' id='saving'>
                 <table>
                     <tr>
-		    			<td><div><button id="save" class="storebtn" style="color:black; width: 200px; height: 55px; font-size: 20px">Save</button></div></td>
-		    			<td><div><button id="load" class="storebtn" style="color:black; width: 200px; height: 55px; font-size: 20px">Load</button></div></td>
+                        <td><div><button id="save" class="storebtn" style="color:black; width: 200px; height: 55px; font-size: 20px">Save</button></div></td>
+                        <td><div><button id="load" class="storebtn" style="color:black; width: 200px; height: 55px; font-size: 20px">Load</button></div></td>
                     </tr>
                     <tr>
                         <td><div><button id="exportbtn" class="storebtn" style="color:black; width: 200px; height: 55px; font-size: 20px">Export</button></div></td>
@@ -1383,7 +1383,7 @@
                         <td><div><button id="importallbtn" class="storebtn" onclick='import_save_all()' style="color:black; width: 200px; height: 55px; font-size: 20px">Import all</button></div></td>
                     </tr>
                     <tr>
-		    			<td><div><button id="reset" class="storebtn" style="color:black; width: 200px; height: 55px; font-size: 20px">RESET THE GAME</button></div></td>
+                        <td><div><button id="reset" class="storebtn" style="color:black; width: 200px; height: 55px; font-size: 20px">RESET THE GAME</button></div></td>
                         <td><div><button id="offlineProgress" onclick='toggleOfflineProgress()' class="storebtn" style="color:black; width: 200px; height: 55px; font-size: 15px"></button></div></td>
                     </tr>
                 </table>
@@ -1403,7 +1403,7 @@
                     <tr>
                         <td><div><button id="newsbtn" class="storebtn" style="color:black; width: 200px; height: 55px; font-size:120%">Hide/show the news</button></div></td>
                         <td><div><button id="confirmations" onclick="showConfirmations()" class="storebtn" style="color:black; width: 200px; height: 55px; font-size: 15px">Confirmations</button></div></td>
-		    			<td><div><button id="retry" onclick="toggleChallengeRetry()" class="storebtn" style="color:black; width: 200px; height: 55px; font-size:120%">Automatically retry challenges</button></div></td>
+                        <td><div><button id="retry" onclick="toggleChallengeRetry()" class="storebtn" style="color:black; width: 200px; height: 55px; font-size:120%">Automatically retry challenges</button></div></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -2887,10 +2887,10 @@
         </div>
         <div id="galaxy" class="tab" align="center" style="display: none">
             <div id="galaxyPoints" style="color: #4169E1; font-size: 15px; width: 40%; margin: 0 auto">You have x galaxy points.</div>
-	        <br>
-			<table class="table" style="margin: 0 auto">
-				<tr>
-				    <td>
+            <br>
+            <table class="table" style="margin: 0 auto">
+                <tr>
+                    <td>
                 <button id="galaxy11" class="infinistorebtn1" onclick="buyGalaxyUpgrade(11)">Normal dimensions are cheaper based on your infinitied stat.<br>Currently: <span id='galspan11'></span>x<br>Cost: 1 GP</button>
             </td>
             <td>
@@ -2899,9 +2899,9 @@
             <td>
                 <button id="galaxy13" class="infinistorebtn3" onclick="buyGalaxyUpgrade(13)">Normal dimensions gain a multiplier based on your galaxy points.<br>Currently: <span id='galspan13'>x</span>x<br>Cost: 20 GP</button>
             </td>
-				</tr>
+                </tr>
         <tr>
-				    <td>
+                    <td>
                 <button id="galaxy21" class="infinistorebtn1" onclick="buyGalaxyUpgrade(21)">Decrease the dimension boost cost multiplier to 5 and cost scaling starts 2 later.<br>Cost: 1 GP</button>
             </td>
             <td>
@@ -2910,9 +2910,9 @@
             <td>
                 <button id="galaxy23" class="infinistorebtn3" onclick="buyGalaxyUpgrade(23)">Dimension boosts are stronger based on your galaxy points.<br>Currently: <span id='galspan23'>x</span>x<br>Cost: 100 GP</button>
             </td>
-				</tr>
+                </tr>
         <tr>
-				    <td>
+                    <td>
                 <button id="galaxy31" class="infinistorebtn1" onclick="buyGalaxyUpgrade(31)">Dimension multipliers are increased.<br>Currently: x^<span id='galspan31'></span><br>Cost: 2 GP</button>
             </td>
             <td>
@@ -2920,8 +2920,8 @@
             </td>
             <td>
                 <button id="galaxy33" class="infinistorebtn3" onclick="buyGalaxyUpgrade(33)">Multiplier per ten dimensions is stronger based on your galaxy points.<br>Currently: <span id='galspan33'>x</span>x<br>Cost: <span id='galcost33'></span> GP</button></td>
-				</tr>
-			</table>
+                </tr>
+            </table>
             <div>
                 <table id="footer">
                     <tr>
@@ -3507,113 +3507,113 @@
         </div>
 
         </div>
-		<div class='tab' id='quantumtab'>
-			<table class="table" align="center" style="margin: auto">
-				<tr>
-					<td><button class="secondarytabbtn" onclick="showQuantumTab('uquarks')">Quarks</button></td>
-					<td><button class="secondarytabbtn" onclick="showQuantumTab('gluons')">Gluons</button></td>
-					<td id='electronstabbtn'><button class="secondarytabbtn" onclick="showQuantumTab('electrons')">Electrons</button></td>
-				</tr>
-			</table>
-			<div class='quantumtab' id='uquarks'>
+        <div class='tab' id='quantumtab'>
+            <table class="table" align="center" style="margin: auto">
+                <tr>
+                    <td><button class="secondarytabbtn" onclick="showQuantumTab('uquarks')">Quarks</button></td>
+                    <td><button class="secondarytabbtn" onclick="showQuantumTab('gluons')">Gluons</button></td>
+                    <td id='electronstabbtn'><button class="secondarytabbtn" onclick="showQuantumTab('electrons')">Electrons</button></td>
+                </tr>
+            </table>
+            <div class='quantumtab' id='uquarks'>
                 <canvas id="quarkCanvas"></canvas>
-				<table class='qtable'><tr>
-					<td>
-						<p>You have <span class="red" id="redQuarks" style="font-size:35px">0</span> red quarks.</p>
-						<button class='storebtn' id='redAssign' onclick='assignQuark("r")'>Assign</button>
-					</td>
-					<td>
-						<p>You have <span class="green" id="greenQuarks" style="font-size:35px">0</span> green quarks.</p>
-						<button class='storebtn' id='greenAssign' onclick='assignQuark("g")'>Assign</button>
-					</td>
-					<td>
-						<p>You have <span class="blue" id="blueQuarks" style="font-size:35px">0</span> blue quarks.</p>
-						<button class='storebtn' id='blueAssign' onclick='assignQuark("b")'>Assign</button>
-					</td>
-				</tr></table>
-				<p>You are getting <span id='powerRate' style="font-size:35px">0</span> <span id='colorCharge'></span> charge per second.</p>
-				<table class='qtable'><tr>
-					<td>
-						<p>You have <span class="red" id="redPower" style="font-size:35px">0.0</span> red power.<br>
-						Translated to <span id="boost">boosted </span><span class="red" id="redTranslation" style="font-size:35px">0.0</span>% more galaxy efficiency.</p>
-					</td>
-					<td>
-						<p>You have <span class="green" id="greenPower" style="font-size:35px">0.0</span> green power.<br>
-						Translated to <span class="green" id="greenTranslation" style="font-size:35px">0</span>% more extra replicated galaxies.</p>
-					</td>
-					<td>
-						<p>You have <span class="blue" id="bluePower" style="font-size:35px">0.0</span> blue power.<br>
-						Translated to <span class="blue" id="blueTranslation" style="font-size:35px">1.0</span>x more dilated time production.</p>
-					</td>
-				</tr></table>
-			</div>
-			<div class='quantumtab' id='gluons'>
-				<table id='gluonupgrades'><tr>
-					<td colspan=2><p>You have <span id="rg" style="font-size:35px">0</span> red-green gluons.<br>+<span id='rggain'>0</span> on next quantum from red quarks.</p></td>
-					<td colspan=2><p>You have <span id="gb" style="font-size:35px">0</span> green-blue gluons.<br>+<span id='gbgain'>0</span> on next quantum from green quarks.</p></td>
-					<td colspan=2><p>You have <span id="br" style="font-size:35px">0</span> blue-red gluons.<br>+<span id='brgain'>0</span> on next quantum from blue quarks.</p></td>
-				</tr><tr>
-					<td><button id='rgupg1' onclick='buyGluonUpg("rg",1)'>Remote galaxy cost scaling is reduced.<br>Cost: 1 RG gluons</button></td>
-					<td><button id='rgupg2' onclick='buyGluonUpg("rg",2)'>Galaxies are more effective based on your free galaxies.<br>Cost: 2 RG gluons</button></td>
-					<td><button id='gbupg1' onclick='buyGluonUpg("gb",1)'>You gain more replicanti based on your tickspeed reduction multiplier.<br>Cost: 1 GB gluons</button></td>
-					<td><button id='gbupg2' onclick='buyGluonUpg("gb",2)'>Replicanti interval increases 2x slower.<br>Cost: 2 GB gluons</button></td>
-					<td><button id='brupg1' onclick='buyGluonUpg("br",1)'>You gain more tachyon particles based on your dilated time.<br><span id='brupg1current'></span><br>Cost: 1 BR gluons</button></td>
-					<td><button id='brupg2' onclick='buyGluonUpg("br",2)'>Sacrifice affects dilated time production.<br><span id='brupg2current'></span><br><span id='brupg1current'></span>Cost: 2 BR gluons</button></td>
-				</tr><tr>
-					<td><button id='rgupg3' onclick='buyGluonUpg("rg",3)'>First Meta Dimension is boosted by dimension boosts.<br>Cost: 4 RG gluons</button></td>
-					<td><button id='rgupg4' onclick='buyGluonUpg("rg",4)'>Galaxies are 50% stronger, but electrons are 30% weaker and normal galaxies are 60% weaker.<br>Cost: 100 RG gluons</button></td>
-					<td><button id='gbupg3' onclick='buyGluonUpg("gb",3)'>You gain 2.3x more IP by buying IP mult.<br>Cost: 4 GB gluons</button></td>
-					<td><button id='gbupg4' onclick='buyGluonUpg("gb",4)'>Massively decrease the tickspeed cost multiplier increase to 1.25x.<br>Cost: 100 GB gluons</button></td>
-					<td><button id='brupg3' onclick='buyGluonUpg("br",3)'>Tachyon particles are little bit stronger.<br>Cost: 4 BR gluons</button></td>
-					<td><button id='brupg4' onclick='buyGluonUpg("br",4)'>Multiplier per ten dimensions boosts Meta Dimensions.<br><span id='brupg4current'></span><br>Cost: 100 BR gluons</button></td>
-				</tr><tr id='gupgrow3'>
-					<td><button id='rgupg5' onclick='buyGluonUpg("rg",5)'>Slow down Dark Matter Galaxies effect by 13%.<br>Cost: <span id='rgupg5cost'></span> RG gluons</button></td>
-					<td><button id='rgupg6' onclick='buyGluonUpg("rg",6)'>Slow down Distant Antimatter Galaxies effect by 15%.<br>Cost: <span id='rgupg6cost'></span> RG gluons</button></td>
-					<td><button id='gbupg5' onclick='buyGluonUpg("gb",5)'>Replicated galaxies slow down Dark Matter Galaxies effect.<br><span id='gbupg5current'></span><br>Cost: <span id='gbupg5cost'></span> GB gluons</button></td>
-					<td><button id='gbupg6' onclick='buyGluonUpg("gb",6)'>Infinity power slow down Distant Antimatter Galaxies effect.<br><span id='gbupg6current'></span><br>Cost: <span id='gbupg6cost'></span> GB gluons</button></td>
-					<td><button id='brupg5' onclick='buyGluonUpg("br",5)'>Tachyon particles slow down Dark Matter Galaxies effect.<br><span id='brupg5current'></span><br>Cost: <span id='brupg5cost'></span> BR gluons</button></td>
-					<td><button id='brupg6' onclick='buyGluonUpg("br",6)' style='font-size:7.5px'>Meta-dimension boosts slow down Distant Antimatter Galaxies effect.<br><span id='brupg6current'></span><br>Cost: <span id='brupg6cost'></span> BR gluons</button></td>
-				</tr><tr id='gupgrow4'>
-					<td colspan=2><button id='rgupg7' onclick='buyGluonUpg("rg",7)'>Slow down Remote Antimatter Galaxies effect by 10%.<br>Cost: <span id='rgupg7cost'></span> RG gluons</button></td>
-					<td colspan=2><button id='gbupg7' onclick='buyGluonUpg("gb",7)'>Infinity Points slow down Remote Antimatter Galaxies effect.<br><span id='gbupg7current'></span><br>Cost: <span id='gbupg7cost'></span> GB gluons</button></td>
-					<td colspan=2><button id='brupg7' onclick='buyGluonUpg("br",7)'>Eternity Points slow down Remote Antimatter Galaxies effect.<br><span id='brupg7current'></span><br>Cost: <span id='brupg7cost'></span> BR gluons</button></td>
-				</tr></table>
-				<button id='qkmult' onclick='buyQuarkMult()'>You gain 2x more quarks.<br><span id='qkmultcurrent'></span><br><span id='qkmultcost'></span></button><br>
-				<button class="storebtn" onclick='maxQuarkMult()' style='width:190px'>Max QK mult</button>
-			</div>
-			<div class='quantumtab' id='electrons'>
-				You have <span id="electronsAmount" style="font-size:35px">0</span> electrons.<br>
-				Multiplier per ten dimensions is raised to the power of <span id="electronsTranslation" style="font-size:35px">1.00</span>.<br>
-				You sacrificed <span id='sacrificedGals'>0</span> galaxies.<br>
-				<button class='storebtn' id='sacrifice1' onclick='sacrificeGalaxy(1)' style='width:250px'>Sacrifice 1 normal galaxy</button><br>
-				<button class='storebtn' id='sacrifice2' onclick='sacrificeGalaxy(2)' style='width:250px'>Sacrifice 10 normal galaxies</button><br>
-				<button class='storebtn' id='sacrifice3' onclick='sacrificeGalaxy(3)' style='width:250px'>Sacrifice 100 normal galaxies</button><br>
-				<button class='storebtn' id='sacrifice4' onclick='sacrificeGalaxy(4)' style='width:250px'>Sacrifice 1,000 normal galaxies</button><br>
-				<button class='storebtn' id='sacrifice5' onclick='sacrificeGalaxy(5)' style='width:250px'>Sacrifice 50%</button>
-				<button class='storebtn' id='sacrifice6' onclick='sacrificeGalaxy(6)' style='width:250px'>Sacrifice all</button>
-				<br><br>
-				You will gain <span id='electronsGainMult'>2</span> electrons per 1 sacrificed galaxy.<br>
-				<table class="table" align="center" style="margin: auto"><tr>
-					<td><button class='gluonupgrade storebtn' id='electronupg1' onclick='buyElectronUpg(1)'></button></td>
-					<td><button class='gluonupgrade storebtn' id='electronupg2' onclick='buyElectronUpg(2)'></button></td>
-					<td><button class='gluonupgrade storebtn' id='electronupg3' onclick='buyElectronUpg(3)'></button></td>
-					<td><button class='gluonupgrade storebtn' id='electronupg4' onclick='buyElectronUpg(4)'></button></td>
-				</tr></table>
-			</div>
-			<div id="footercontainer">
-				<table id="footer">
-					<tr>
-						<td>
-							<div style="text-align:center">
-								<a href="howto.html" target="_newtab">How to play  </a> |
-								<a href="about.html" onclick="giveAchievement('A sound financial decision')" target="_newtab">About   </a> |
-								<a href="changelog/" target="_newtab">Changelog   </a>
-							</div>
-						</td>
-					</tr>
-				</table>
-			</div>
-		</div>
+                <table class='qtable'><tr>
+                    <td>
+                        <p>You have <span class="red" id="redQuarks" style="font-size:35px">0</span> red quarks.</p>
+                        <button class='storebtn' id='redAssign' onclick='assignQuark("r")'>Assign</button>
+                    </td>
+                    <td>
+                        <p>You have <span class="green" id="greenQuarks" style="font-size:35px">0</span> green quarks.</p>
+                        <button class='storebtn' id='greenAssign' onclick='assignQuark("g")'>Assign</button>
+                    </td>
+                    <td>
+                        <p>You have <span class="blue" id="blueQuarks" style="font-size:35px">0</span> blue quarks.</p>
+                        <button class='storebtn' id='blueAssign' onclick='assignQuark("b")'>Assign</button>
+                    </td>
+                </tr></table>
+                <p>You are getting <span id='powerRate' style="font-size:35px">0</span> <span id='colorCharge'></span> charge per second.</p>
+                <table class='qtable'><tr>
+                    <td>
+                        <p>You have <span class="red" id="redPower" style="font-size:35px">0.0</span> red power.<br>
+                        Translated to <span id="boost">boosted </span><span class="red" id="redTranslation" style="font-size:35px">0.0</span>% more galaxy efficiency.</p>
+                    </td>
+                    <td>
+                        <p>You have <span class="green" id="greenPower" style="font-size:35px">0.0</span> green power.<br>
+                        Translated to <span class="green" id="greenTranslation" style="font-size:35px">0</span>% more extra replicated galaxies.</p>
+                    </td>
+                    <td>
+                        <p>You have <span class="blue" id="bluePower" style="font-size:35px">0.0</span> blue power.<br>
+                        Translated to <span class="blue" id="blueTranslation" style="font-size:35px">1.0</span>x more dilated time production.</p>
+                    </td>
+                </tr></table>
+            </div>
+            <div class='quantumtab' id='gluons'>
+                <table id='gluonupgrades'><tr>
+                    <td colspan=2><p>You have <span id="rg" style="font-size:35px">0</span> red-green gluons.<br>+<span id='rggain'>0</span> on next quantum from red quarks.</p></td>
+                    <td colspan=2><p>You have <span id="gb" style="font-size:35px">0</span> green-blue gluons.<br>+<span id='gbgain'>0</span> on next quantum from green quarks.</p></td>
+                    <td colspan=2><p>You have <span id="br" style="font-size:35px">0</span> blue-red gluons.<br>+<span id='brgain'>0</span> on next quantum from blue quarks.</p></td>
+                </tr><tr>
+                    <td><button id='rgupg1' onclick='buyGluonUpg("rg",1)'>Remote galaxy cost scaling is reduced.<br>Cost: 1 RG gluons</button></td>
+                    <td><button id='rgupg2' onclick='buyGluonUpg("rg",2)'>Galaxies are more effective based on your free galaxies.<br>Cost: 2 RG gluons</button></td>
+                    <td><button id='gbupg1' onclick='buyGluonUpg("gb",1)'>You gain more replicanti based on your tickspeed reduction multiplier.<br>Cost: 1 GB gluons</button></td>
+                    <td><button id='gbupg2' onclick='buyGluonUpg("gb",2)'>Replicanti interval increases 2x slower.<br>Cost: 2 GB gluons</button></td>
+                    <td><button id='brupg1' onclick='buyGluonUpg("br",1)'>You gain more tachyon particles based on your dilated time.<br><span id='brupg1current'></span><br>Cost: 1 BR gluons</button></td>
+                    <td><button id='brupg2' onclick='buyGluonUpg("br",2)'>Sacrifice affects dilated time production.<br><span id='brupg2current'></span><br><span id='brupg1current'></span>Cost: 2 BR gluons</button></td>
+                </tr><tr>
+                    <td><button id='rgupg3' onclick='buyGluonUpg("rg",3)'>First Meta Dimension is boosted by dimension boosts.<br>Cost: 4 RG gluons</button></td>
+                    <td><button id='rgupg4' onclick='buyGluonUpg("rg",4)'>Galaxies are 50% stronger, but electrons are 30% weaker and normal galaxies are 60% weaker.<br>Cost: 100 RG gluons</button></td>
+                    <td><button id='gbupg3' onclick='buyGluonUpg("gb",3)'>You gain 2.3x more IP by buying IP mult.<br>Cost: 4 GB gluons</button></td>
+                    <td><button id='gbupg4' onclick='buyGluonUpg("gb",4)'>Massively decrease the tickspeed cost multiplier increase to 1.25x.<br>Cost: 100 GB gluons</button></td>
+                    <td><button id='brupg3' onclick='buyGluonUpg("br",3)'>Tachyon particles are little bit stronger.<br>Cost: 4 BR gluons</button></td>
+                    <td><button id='brupg4' onclick='buyGluonUpg("br",4)'>Multiplier per ten dimensions boosts Meta Dimensions.<br><span id='brupg4current'></span><br>Cost: 100 BR gluons</button></td>
+                </tr><tr id='gupgrow3'>
+                    <td><button id='rgupg5' onclick='buyGluonUpg("rg",5)'>Slow down Dark Matter Galaxies effect by 13%.<br>Cost: <span id='rgupg5cost'></span> RG gluons</button></td>
+                    <td><button id='rgupg6' onclick='buyGluonUpg("rg",6)'>Slow down Distant Antimatter Galaxies effect by 15%.<br>Cost: <span id='rgupg6cost'></span> RG gluons</button></td>
+                    <td><button id='gbupg5' onclick='buyGluonUpg("gb",5)'>Replicated galaxies slow down Dark Matter Galaxies effect.<br><span id='gbupg5current'></span><br>Cost: <span id='gbupg5cost'></span> GB gluons</button></td>
+                    <td><button id='gbupg6' onclick='buyGluonUpg("gb",6)'>Infinity power slow down Distant Antimatter Galaxies effect.<br><span id='gbupg6current'></span><br>Cost: <span id='gbupg6cost'></span> GB gluons</button></td>
+                    <td><button id='brupg5' onclick='buyGluonUpg("br",5)'>Tachyon particles slow down Dark Matter Galaxies effect.<br><span id='brupg5current'></span><br>Cost: <span id='brupg5cost'></span> BR gluons</button></td>
+                    <td><button id='brupg6' onclick='buyGluonUpg("br",6)' style='font-size:7.5px'>Meta-dimension boosts slow down Distant Antimatter Galaxies effect.<br><span id='brupg6current'></span><br>Cost: <span id='brupg6cost'></span> BR gluons</button></td>
+                </tr><tr id='gupgrow4'>
+                    <td colspan=2><button id='rgupg7' onclick='buyGluonUpg("rg",7)'>Slow down Remote Antimatter Galaxies effect by 10%.<br>Cost: <span id='rgupg7cost'></span> RG gluons</button></td>
+                    <td colspan=2><button id='gbupg7' onclick='buyGluonUpg("gb",7)'>Infinity Points slow down Remote Antimatter Galaxies effect.<br><span id='gbupg7current'></span><br>Cost: <span id='gbupg7cost'></span> GB gluons</button></td>
+                    <td colspan=2><button id='brupg7' onclick='buyGluonUpg("br",7)'>Eternity Points slow down Remote Antimatter Galaxies effect.<br><span id='brupg7current'></span><br>Cost: <span id='brupg7cost'></span> BR gluons</button></td>
+                </tr></table>
+                <button id='qkmult' onclick='buyQuarkMult()'>You gain 2x more quarks.<br><span id='qkmultcurrent'></span><br><span id='qkmultcost'></span></button><br>
+                <button class="storebtn" onclick='maxQuarkMult()' style='width:190px'>Max QK mult</button>
+            </div>
+            <div class='quantumtab' id='electrons'>
+                You have <span id="electronsAmount" style="font-size:35px">0</span> electrons.<br>
+                Multiplier per ten dimensions is raised to the power of <span id="electronsTranslation" style="font-size:35px">1.00</span>.<br>
+                You sacrificed <span id='sacrificedGals'>0</span> galaxies.<br>
+                <button class='storebtn' id='sacrifice1' onclick='sacrificeGalaxy(1)' style='width:250px'>Sacrifice 1 normal galaxy</button><br>
+                <button class='storebtn' id='sacrifice2' onclick='sacrificeGalaxy(2)' style='width:250px'>Sacrifice 10 normal galaxies</button><br>
+                <button class='storebtn' id='sacrifice3' onclick='sacrificeGalaxy(3)' style='width:250px'>Sacrifice 100 normal galaxies</button><br>
+                <button class='storebtn' id='sacrifice4' onclick='sacrificeGalaxy(4)' style='width:250px'>Sacrifice 1,000 normal galaxies</button><br>
+                <button class='storebtn' id='sacrifice5' onclick='sacrificeGalaxy(5)' style='width:250px'>Sacrifice 50%</button>
+                <button class='storebtn' id='sacrifice6' onclick='sacrificeGalaxy(6)' style='width:250px'>Sacrifice all</button>
+                <br><br>
+                You will gain <span id='electronsGainMult'>2</span> electrons per 1 sacrificed galaxy.<br>
+                <table class="table" align="center" style="margin: auto"><tr>
+                    <td><button class='gluonupgrade storebtn' id='electronupg1' onclick='buyElectronUpg(1)'></button></td>
+                    <td><button class='gluonupgrade storebtn' id='electronupg2' onclick='buyElectronUpg(2)'></button></td>
+                    <td><button class='gluonupgrade storebtn' id='electronupg3' onclick='buyElectronUpg(3)'></button></td>
+                    <td><button class='gluonupgrade storebtn' id='electronupg4' onclick='buyElectronUpg(4)'></button></td>
+                </tr></table>
+            </div>
+            <div id="footercontainer">
+                <table id="footer">
+                    <tr>
+                        <td>
+                            <div style="text-align:center">
+                                <a href="howto.html" target="_newtab">How to play  </a> |
+                                <a href="about.html" onclick="giveAchievement('A sound financial decision')" target="_newtab">About   </a> |
+                                <a href="changelog/" target="_newtab">Changelog   </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
     <div class="popup" id="challfail">
         <div id="failPopup">You failed the challenge, you will now exit it.</div>
@@ -3623,7 +3623,7 @@
         <div>If you stuck at the loading screen, please click "Okay" to load the game!</div><br><br>
         <button class="storebtn" style="font-size: 15px" onclick="initGame()" style="display: inline">Okay</button>
     </div>
-	<div class="popup optionmenu" id="welcome">
+    <div class="popup optionmenu" id="welcome">
         <div><text id="welcomeMessage"></text></div>
         <button class="storebtn" style="font-size: 15px" onclick="showNextModeMessage()" style="display: inline">Okay</button>
     </div>
@@ -3635,37 +3635,37 @@
     <div class="popup" id="offlineprogress" style="width: 450px; height: 200px;">
         <div id="offlinePopup" style="height: 150px">You made X antimatter and stuff</div>
         <button class="storebtn" style="font-size: 15px" onclick="closeToolTip()" style="display: inline">Okay</button>
-	</div>
-	<div class="popup loadmenu" id="loadmenu" style="overflow-y:hidden; width:550px">
-		<button class="closebtn storebtn" onclick="closeToolTip()">&times;</button>
-		<button class="storebtn" style="font-size: 15px" onclick="new_game()" style="display: inline">New save</button>
-		<button class="storebtn" style="font-size: 15px" onclick="import_save(true)" style="display: inline">Import</button>
-		<button class="storebtn" id='ngmBtn' style="font-size: 15px" onclick="toggle_mode('ngm')" style="display: inline">NG-: OFF</button>
-		<button class="storebtn" id='ngmmBtn' style="font-size: 15px" onclick="toggle_mode('ngmm')" style="display: inline">NG--: OFF</button><br>
-		<button class="storebtn" id='ersBtn' style="font-size: 15px; width:255px" onclick="toggle_mode('ers')" style="display: inline">Eternity Respecced: OFF</button>
-		<button class="storebtn" id='ngpBtn' style="font-size: 15px" onclick="toggle_mode('ngp')" style="display: inline">NG+: OFF</button>
-		<button class="storebtn" id='ngppBtn' style="font-size: 15px" onclick="toggle_mode('ngpp')" style="display: inline">NG++: OFF</button>
-		<div style="height:230px;overflow-y:auto">
-			<table id='saves'>
-			</table>
-		</div>
-	</div>
-	<div class="popup loadmenu" id="presetsmenu" style="overflow-y:hidden">
-		<button class="closebtn storebtn" onclick="closeToolTip()">&times;</button>
-		<button class="storebtn" style="font-size: 15px" onclick="new_preset()" style="display: inline">New preset</button>
-		<button class="storebtn" style="font-size: 15px" onclick="new_preset(true)" style="display: inline">Import</button>
-		<div style="height:270px;overflow-y:auto">
-			<table id='presets'>
-			</table>
-		</div>
-	</div>
+    </div>
+    <div class="popup loadmenu" id="loadmenu" style="overflow-y:hidden; width:550px">
+        <button class="closebtn storebtn" onclick="closeToolTip()">&times;</button>
+        <button class="storebtn" style="font-size: 15px" onclick="new_game()" style="display: inline">New save</button>
+        <button class="storebtn" style="font-size: 15px" onclick="import_save(true)" style="display: inline">Import</button>
+        <button class="storebtn" id='ngmBtn' style="font-size: 15px" onclick="toggle_mode('ngm')" style="display: inline">NG-: OFF</button>
+        <button class="storebtn" id='ngmmBtn' style="font-size: 15px" onclick="toggle_mode('ngmm')" style="display: inline">NG--: OFF</button><br>
+        <button class="storebtn" id='ersBtn' style="font-size: 15px; width:255px" onclick="toggle_mode('ers')" style="display: inline">Eternity Respecced: OFF</button>
+        <button class="storebtn" id='ngpBtn' style="font-size: 15px" onclick="toggle_mode('ngp')" style="display: inline">NG+: OFF</button>
+        <button class="storebtn" id='ngppBtn' style="font-size: 15px" onclick="toggle_mode('ngpp')" style="display: inline">NG++: OFF</button>
+        <div style="height:230px;overflow-y:auto">
+            <table id='saves'>
+            </table>
+        </div>
+    </div>
+    <div class="popup loadmenu" id="presetsmenu" style="overflow-y:hidden">
+        <button class="closebtn storebtn" onclick="closeToolTip()">&times;</button>
+        <button class="storebtn" style="font-size: 15px" onclick="new_preset()" style="display: inline">New preset</button>
+        <button class="storebtn" style="font-size: 15px" onclick="new_preset(true)" style="display: inline">Import</button>
+        <div style="height:270px;overflow-y:auto">
+            <table id='presets'>
+            </table>
+        </div>
+    </div>
     <div class="popup optionmenu" id="animationoptions">
         <button class="closebtn storebtn" onclick="closeToolTip()">&times;</button>
-		<button id="floatingTextAnimBtn" class="storebtn" onclick="animationOnOff('floatingText')" style="width: 200px; height: 55px; font-size: 15px" style="display: inline">ON</button>
+        <button id="floatingTextAnimBtn" class="storebtn" onclick="animationOnOff('floatingText')" style="width: 200px; height: 55px; font-size: 15px" style="display: inline">ON</button>
         <button id="bigCrunchAnimBtn" class="storebtn" onclick="animationOnOff('bigCrunch')" style="width: 200px; height: 55px; font-size: 15px" style="display: inline">ON</button>
         <button id="tachyonParticleAnimBtn" class="storebtn" onclick="animationOnOff('tachyonParticles')" style="width: 200px; height: 55px; font-size: 15px" style="display: inline">ON</button>
         <button id="quarksAnimBtn" class="storebtn" onclick="animationOnOff('quarks')" style="width: 200px; height: 55px; font-size: 15px" style="display: inline">ON</button>
-	</div>
+    </div>
     <div class="popup optionmenu" id="confirmationoptions">
         <button class="closebtn storebtn" onclick="closeToolTip()">&times;</button>
         <button id="sacConfirmBtn" onclick='sacrificeConf()' class="storebtn" style="width: 200px; height: 45px; font-size: 12px" style="display: inline"></button>
@@ -3674,64 +3674,86 @@
         <button id="eternityconf" onclick='toggleEternityConf()' class="storebtn" style="width: 200px; height: 45px; font-size: 12px" style="display: inline"></button>
         <button id="dilationConfirmBtn" class="storebtn" onclick="toggleDilaConf()" style="width: 200px; height: 45px; font-size: 12px" style="display: inline"></button>
         <button id="quantumConfirmBtn" class="storebtn" onclick="toggleQuantumConf()" style="width: 200px; height: 45px; font-size: 12px" style="display: inline"></button>
-	</div>
-	<div class="popup optionmenu" id="notationmenu" style="overflow-y:hidden; width: 450px">
-		<button class="closebtn storebtn" onclick="closeToolTip()">&times;</button>
-		<p id='chosenNotation'></p>
-		<p id='chosenCommas'></p>
-		<button id='openpsioptions' class='storebtn' style='width:150px' onclick='openNotationOptions()'>Notation options</button>
-		<div id='mainnotationoptions1' class='notationOptions' style="left: 0px">
-			<table id='notationOptions'></table>
-		</div>
-		<div id='mainnotationoptions2' class='notationOptions' style="right: 0px">
-			<table id='commasOptions'></table>
-		</div>
-		<div id='notationoptions' class='notationOptions' style="display: none; width: 450px; overflow-y: scroll">
-			<b>Scientific notation</b>
-			Significant digits (min: 1, max: 10, leave 0 for variable): <input id="significantDigits" style="width: 170px" type="number" min=0 max=10 onchange="switchOption('scientific','significantDigits')"></input><br>
-			<b>Psi notation</b>
-			Max characters (min: 2, max: 30): <input id="maxLength" style="width: 170px" type="number" min=2 max=30 onchange="switchOption('psi','maxLength')"></input><br>
-			Max arguments (min: 1, max: 6): <input id="maxArguments" style="width: 170px" type="number" min=1 max=6 onchange="switchOption('psi','maxArguments')"></input><br>
-			Max letters (min: 1, max: 4): <input id="maxLetters" style="width: 170px" type="number" min=1 max=4 onchange="switchOption('psi','maxLetters')"></input><br>
-			<p id='psiSide'></p>
-			<button class="storebtn" style="width:160px; height: 40px" onclick="switchOption('psi','psiSidel')">Numbers on left side</button>
-			<button class="storebtn" style="width:160px; height: 40px" onclick="switchOption('psi','psiSider')">Numbers on right side</button>
-			<p id='psiLetter'></p>
-			<table id='psiLetterOptions'>
-				<tr>
-					<button class="storebtn" style="width:160px; height: 40px" onclick="switchOption('psi','psiLetterNone')">Automatically choose letter</button>
-				</tr>
-				<tr>
-					<button class="storebtn" style="width:160px; height: 40px" onclick="switchOption('psi','psiLetterNone')">Force E</button>
-				</tr>
-				<tr>
-					<button class="storebtn" style="width:160px; height: 40px" onclick="switchOption('psi','psiLetterNone')">Force F</button>
-				</tr>
-				<tr>
-					<button class="storebtn" style="width:160px; height: 40px" onclick="switchOption('psi','psiLetterNone')">Force G</button>
-				</tr>
-				<tr>
-					<button class="storebtn" style="width:160px; height: 40px" onclick="switchOption('psi','psiLetterNone')">Force H</button>
-				</tr>
-			</table>
-			<b>Spazzy notation</b>
-			<p id='chosenSubNotation'></p>
-			<table id='subNotationOptions'></table>
-		</div>
-	</div>
-	<div class="popup optionmenu" id="thememenu" style="overflow-y:hidden">
-		<button class="closebtn storebtn" onclick="closeToolTip()">&times;</button>
-		<p style='display:inline'>
-			<p id='chosenTheme'></p>
-			<button class='storebtn' onclick="setTheme()" style='width: 240px'>Select Normal</button>
-			<button class='storebtn' onclick="setTheme('Metro')" style='width: 240px'>Select Metro</button>
-			<button class='storebtn' onclick="setTheme('Dark')" style='width: 240px'>Select Dark</button>
-			<button class='storebtn' onclick="setTheme('Dark Metro')" style='width: 240px'>Select Dark Metro</button>
-			<button class='storebtn' onclick="setTheme('Inverted')" style='width: 240px'>Select Inverted</button>
-			<button class='storebtn' onclick="setTheme('Inverted Metro')" style='width: 240px'>Select Inverted Metro</button>
-			<button class='storebtn' onclick="setTheme('Aarex\'s Modifications')" style='width: 240px'>Select Aarex's Modifications</button>
-		</p>
-	</div>
+    </div>
+    <div class="popup optionmenu" id="notationmenu" style="overflow-y:hidden; width: 450px">
+        <button class="closebtn storebtn" onclick="closeToolTip()">&times;</button>
+        <p id='chosenNotation'></p>
+        <p id='chosenCommas'></p>
+        <button id='openpsioptions' class='storebtn' style='width:150px' onclick='openNotationOptions()'>Notation options</button>
+        <div id='mainnotationoptions1' class='notationOptions' style="left: 0px">
+            <table id='notationOptions'></table>
+        </div>
+        <div id='mainnotationoptions2' class='notationOptions' style="right: 0px">
+            <table id='commasOptions'></table>
+        </div>
+        <div id='notationoptions' class='notationOptions' style="display: none; width: 450px; overflow-y: scroll">
+            <b>Scientific notation</b>
+            Significant digits (min: 1, max: 10, leave 0 for variable): <input id="significantDigits" style="width: 170px" type="number" min=0 max=10 onchange="switchOption('scientific','significantDigits')"></input><br>
+            <b>Psi notation</b>
+            Max characters (min: 2, max: 30): <input id="maxLength" style="width: 170px" type="number" min=2 max=30 onchange="switchOption('psi','maxLength')"></input><br>
+            Max arguments (min: 1, max: 8): <input id="maxArguments" style="width: 170px" type="number" min=1 max=8 onchange="switchOption('psi','maxArguments')"></input><br>
+            Max letters (min: 1, max: 4): <input id="maxLetters" style="width: 170px" type="number" min=1 max=4 onchange="switchOption('psi','maxLetters')"></input><br>
+            <p id='psiSide'></p>
+            <table id="psiSideOptions">
+                <tbody>
+                    <tr>
+                        <td>
+                            <button id="psiSidel" class="storebtn" style="width:160px; height: 40px" onclick="switchOption('psi','psiSidel')">Numbers on left side</button>
+                        </td>
+                        <td>
+                            <button id="psiSider" class="storebtn" style="width:160px; height: 40px" onclick="switchOption('psi','psiSider')">Numbers on right side</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p id='psiLetter'></p>
+            <table id='psiLetterOptions'>
+                <tbody>
+                    <tr>
+                        <td>
+                        <button id='psiLetterNone' class="storebtn" style="width:160px; height: 40px" onclick="switchOption('psi','psiLetterNone')">Automatically choose letter</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <button id='psiLetterE' class="storebtn" style="width:160px; height: 40px" onclick="switchOption('psi','psiLetterE')">Force E</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <button id='psiLetterF' class="storebtn" style="width:160px; height: 40px" onclick="switchOption('psi','psiLetterF')">Force F</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <button id='psiLetterG' class="storebtn" style="width:160px; height: 40px" onclick="switchOption('psi','psiLetterG')">Force G</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <button id='psiLetterH' class="storebtn" style="width:160px; height: 40px" onclick="switchOption('psi','psiLetterH')">Force H</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <b>Spazzy notation</b>
+            <p id='chosenSubNotation'></p>
+            <table id='subNotationOptions'></table>
+        </div>
+    </div>
+    <div class="popup optionmenu" id="thememenu" style="overflow-y:hidden">
+        <button class="closebtn storebtn" onclick="closeToolTip()">&times;</button>
+        <p style='display:inline'>
+            <p id='chosenTheme'></p>
+            <button class='storebtn' onclick="setTheme()" style='width: 240px'>Select Normal</button>
+            <button class='storebtn' onclick="setTheme('Metro')" style='width: 240px'>Select Metro</button>
+            <button class='storebtn' onclick="setTheme('Dark')" style='width: 240px'>Select Dark</button>
+            <button class='storebtn' onclick="setTheme('Dark Metro')" style='width: 240px'>Select Dark Metro</button>
+            <button class='storebtn' onclick="setTheme('Inverted')" style='width: 240px'>Select Inverted</button>
+            <button class='storebtn' onclick="setTheme('Inverted Metro')" style='width: 240px'>Select Inverted Metro</button>
+            <button class='storebtn' onclick="setTheme('Aarex\'s Modifications')" style='width: 240px'>Select Aarex's Modifications</button>
+        </p>
+    </div>
     <div id="TTbuttons" style="display:none;">
         <button class="timetheorembtn" onclick="toggleAutoTT()" id="theoremmax" style="margin-left:-276px; width:130px; height: 30px; font-size: 0.75rem; bottom: 77px;">Buy max Theorems</button>
         <button class="timetheorembtn" onclick="openStudyPresets()" id="presetsbtn" style="margin-left:146px; width:130px; height: 30px; font-size: 0.75rem; bottom: 77px;">Presets</button>
@@ -3743,9 +3765,9 @@
     </div>
     <div class="popup optionmenu" id="respecoptions">
         <button class="closebtn storebtn" onclick="closeToolTip()">&times;</button>
-		<button id="respecTime" class="storebtn" onclick="respecToggle('time')" style="width: 200px; height: 55px; font-size: 15px" style="display: inline"></button>
+        <button id="respecTime" class="storebtn" onclick="respecToggle('time')" style="width: 200px; height: 55px; font-size: 15px" style="display: inline"></button>
         <button id="respecMastery" class="storebtn" onclick="respecToggle('mastery')" style="width: 200px; height: 55px; font-size: 15px" style="display: inline"></button>
-	</div>
+    </div>
     <div id="progress" style="display:none">
         <div id="progressbar"><span id="progresspercent" ach-tooltip="Percentage until Infinity">0%</span></div>
     </div>
